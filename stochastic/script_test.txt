@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "" > results.txt
+mean=0
+for i in {1..1000}
+do
+	a=java -classpath bin:bin/gui.jar TestLocalSearch
+	echo "$a \n" >> results.txt
+	let "mean= $mean+$a"
+done
+echo " \n" >> results.txt
+echo "mean = " >> results.txt
+echo "$mean" |bc /1000 >> results.txt
