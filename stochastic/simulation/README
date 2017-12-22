@@ -1,2 +1,3 @@
 to compile: make testFirstPossible or make testFourCouples
 to execute: make exeFirstPossible numberCouples = number_wanted or make exeFourCouples
+newline
